@@ -4,3 +4,4 @@ providers/
 *.exe
 *.bin
 *.log
+.terraform/
