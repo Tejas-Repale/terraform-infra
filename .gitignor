@@ -1,0 +1,13 @@
+cat <<EOF > .gitignore
+# Terraform folders and files to ignore
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.zip
+*.log
+terraform.tfstate.d/
+crash.log
+.terraform.lock.hcl
+EOF
+
