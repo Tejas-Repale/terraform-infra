@@ -1,23 +1,9 @@
-# Ignore local .terraform working directory
-.terraform/
+echo ".terraform/" >> .gitignore
+echo "providers/" >> .gitignore
+echo "*.tfstate" >> .gitignore
+echo "*.tfstate.backup" >> .gitignore
+echo "*.tfvars" >> .gitignore
+echo ".terraform.lock.hcl" >> .gitignore
+echo "crash.log" >> .gitignore
+git add .gitignore
 
-# Ignore Terraform state files
-*.tfstate
-*.tfstate.backup
-
-# Ignore crash logs
-crash.log
-
-# Ignore override files
-*.tfvars
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
-.terraform/
-providers/
-*.zip
-*.exe
-*.bin
-*.log
-.terraform/
