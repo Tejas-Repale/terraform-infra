@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VPC
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
@@ -41,5 +42,15 @@ resource "aws_subnet" "private_subnet_2" {
 
   tags = {
     Name = "private-subnet-2"
+=======
+resource "aws_subnet" "public_subnet" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "10.0.1.0/24"
+  availability_zone       = "ap-south-1a"
+  map_public_ip_on_launch = true
+
+  tags = {
+    Name = "PublicSubnet"
+>>>>>>> 99ecdeff4d07acd3ddf2a8aff16cf8a7680eee25
   }
 }
